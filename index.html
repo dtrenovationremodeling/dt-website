@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DT Renovation & Remodeling</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5f1;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .hero {
+      padding: 72px 0 56px;
+      background: linear-gradient(to bottom, #f7f5f1, #eef3ec);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .badge {
+      display: inline-block;
+      padding: 10px 16px;
+      border: 1px solid #d6d3d1;
+      border-radius: 999px;
+      background: #fff;
+      color: #44403c;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin: 0 0 18px;
+      max-width: 760px;
+    }
+    .subtext {
+      font-size: 20px;
+      color: #57534e;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .btn-primary {
+      background: #111827;
+      color: white;
+    }
+    .btn-secondary {
+      border: 1px solid #d6d3d1;
+      background: white;
+      color: #1f2937;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tag {
+      border: 1px solid #d6d3d1;
+      background: white;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: #57534e;
+    }
+    section {
+      padding: 64px 0;
+    }
+    h2 {
+      font-size: 34px;
+      margin: 0 0 12px;
+    }
+    .section-lead {
+      font-size: 18px;
+      color: #57534e;
+      max-width: 720px;
+      margin-bottom: 26px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e7e5e4;
+      border-radius: 20px;
+      padding: 22px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .card p { margin: 0; font-size: 18px; }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .trust-card {
+      background: #ffffff;
+      border: 1px solid #e7e5e4;
+      border-radius: 22px;
+      padding: 28px;
+    }
+    .trust-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .dark-box {
+      background: #111827;
+      color: #f9fafb;
+      border-radius: 24px;
+      padding: 28px;
+    }
+    .dark-box h3 { margin-top: 0; font-size: 28px; }
+    .dark-box p, .dark-box li { color: #d1d5db; }
+    .contact {
+      background: #111827;
+      color: #f9fafb;
+      border-top: 1px solid #1f2937;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 26px;
+    }
+    .contact-card {
+      background: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 24px;
+      padding: 28px;
+    }
+    .label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      color: #f9fafb;
+    }
+    footer {
+      padding: 18px 0 36px;
+      background: #111827;
+      color: #9ca3af;
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      h1 { font-size: 38px; }
+      .services, .trust-grid, .split, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="badge">DT Renovation & Remodeling LLC</div>
+      <h1>Reliable renovation and remodeling done right.</h1>
+      <p class="subtext">
+        Serving Mt. Lebanon and the entire Pittsburgh area with clean, detail-oriented work. From small repairs to full home upgrades.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="tel:4129097437">Call for a Quote</a>
+        <a class="btn btn-secondary" href="#services">View Services</a>
+      </div>
+      <div class="tags">
+        <div class="tag">Detail-oriented</div>
+        <div class="tag">Clean work</div>
+        <div class="tag">Reliable service</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <h2>What we do</h2>
+      <p class="section-lead">Practical services focused on quality, clarity, and long-lasting results.</p>
+      <div class="services">
+        <div class="card"><p>Home improvement & general renovation</p></div>
+        <div class="card"><p>Kitchen & bathroom remodeling</p></div>
+        <div class="card"><p>Tile installation & repair</p></div>
+        <div class="card"><p>Flooring (vinyl, laminate, hardwood)</p></div>
+        <div class="card"><p>Drywall installation & repair</p></div>
+        <div class="card"><p>Painting & finishing</p></div>
+        <div class="card"><p>Trim, doors & carpentry</p></div>
+        <div class="card"><p>General handyman services</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-card">
+          <h3>Clean, practical upgrades</h3>
+          <p>Thoughtful renovation work focused on function, durability, and a finished look that feels right for the home.</p>
+        </div>
+        <div class="trust-card">
+          <h3>Reliable communication</h3>
+          <p>Clear estimates, realistic timelines, and straightforward updates from start to finish.</p>
+        </div>
+        <div class="trust-card">
+          <h3>Local homeowner focus</h3>
+          <p>Serving Mt. Lebanon and the entire Pittsburgh area with dependable, detail-oriented work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container split">
+      <div>
+        <h2>Why homeowners choose us</h2>
+        <p class="section-lead">A calm process, solid results, and work that respects both your home and your time.</p>
+        <div class="card">
+          <p>• Clear scope and realistic expectations</p>
+          <p>• Clean, respectful work inside the home</p>
+          <p>• Thoughtful finish details</p>
+          <p>• Licensed trades coordinated through partners when needed</p>
+        </div>
+      </div>
+      <div class="dark-box">
+        <h3>Service Area</h3>
+        <p>Mt. Lebanon & all Pittsburgh area</p>
+        <h3 style="margin-top: 26px;">Contact</h3>
+        <p>Phone: 412-909-7437</p>
+        <p>Email: dtrenovationremodeling@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="label">Contact</div>
+        <h2 style="color:#fff; margin-top:0;">Get a quote for your project</h2>
+        <p class="section-lead" style="color:#d1d5db; margin-bottom:0;">
+          Call or email us with your project details, location, and timeline. We will get back to you as soon as possible.
+        </p>
+      </div>
+      <div class="contact-card">
+        <div class="label">Email</div>
+        <p><a href="mailto:dtrenovationremodeling@gmail.com" style="color:#fff; text-decoration:none;">dtrenovationremodeling@gmail.com</a></p>
+        <div class="label">Phone</div>
+        <p><a href="tel:4129097437" style="color:#fff; text-decoration:none;">412-909-7437</a></p>
+        <div class="label">Estimate Request</div>
+        <p>Tell us what you need, where the project is located, and when you would like to get started.</p>
+        <a class="btn" style="background:#d9f99d; color:#111827;" href="mailto:dtrenovationremodeling@gmail.com">Email for an Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2026 DT Renovation & Remodeling LLC. All rights reserved.</div>
+  </footer>
+</body>
+</html>
